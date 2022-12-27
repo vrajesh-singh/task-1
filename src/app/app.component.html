@@ -1,0 +1,25 @@
+<div>
+  <h1>Inventory Records:</h1>
+
+  <table id="tables">
+    <thead style="text-align: left;">
+      <th (click)="sortId('ProductId')" style="width: 20%;"> <img src="../assets/uu.jpg">Product Id</th>
+      <th (click)="sortCode('ProductCode')"><img src="../assets/uu.jpg"> Product Code</th>
+      <th (click)="sortChar('ProductName')"><img src="../assets/uu.jpg"> Product Name</th>
+      <th (click)="sortChar('Category')" style="width: 12%;"><img src="../assets/uu.jpg">Category</th>
+      <th (click)="sortPrice('Price')" style="width: 12%;"><img src="../assets/uu.jpg">Price</th>
+    </thead>
+    <tr *ngFor="let data of receiveDataVar;
+     let o=odd;
+     let e=even;" [ngClass]="{evens:e}">
+      <td>{{data.ProductId}}</td>
+      <td>{{data.ProductCode}}</td>
+      <td>{{data.ProductName}}</td>
+      <td>{{data.Category}}</td>
+      <td>{{data.Price}}</td>
+    </tr>
+    <tr>
+      <td colspan="6"> <b> <i> Total Number of Inventory: {{sortNumber}}</i> </b></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid rgb(210, 236, 239);
+    border-collapse: collapse;
+  }
+  table{
+  
+    width: 60%;
+  }
+  div{
+    padding-left: 20%;
+  }
+  thead{
+    background-color: rgb(25, 131, 174);
+    color: white;
+  }
+  .evens{
+    background-color: rgb(242, 246, 246);
+  }
+  img{
+    width: 20px;
+  }
+  
+
